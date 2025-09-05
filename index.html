@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Farmer Advisory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🌾 AI-Based Farmer Query Support</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Ask Query</a>
+      <a href="#">History</a>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main>
+    <section class="query-box">
+      <h2>Ask Your Question</h2>
+      <textarea id="queryInput" placeholder="Type your farming question here..."></textarea>
+      <div class="actions">
+        <button onclick="submitQuery()">Submit</button>
+        <button onclick="startVoice()">🎤 Speak</button>
+        <input type="file" id="imageUpload" accept="image/*">
+      </div>
+    </section>
+
+    <section class="response-box">
+      <h2>AI Response</h2>
+      <div id="responseOutput">Your response will appear here...</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
